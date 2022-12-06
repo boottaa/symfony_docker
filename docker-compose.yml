@@ -1,6 +1,14 @@
 version: '3.0'
 
 services:
+  mailer:
+    image: schickling/mailcatcher
+    ports:
+      - "1025"
+      - "8880:1080"
+    networks:
+      - mycustnet
+
   nginx:
     build:
       context: docker/nginx
