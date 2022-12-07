@@ -4,7 +4,6 @@
 cp .env.test .env
 docker-compose up --build -d
 cd app
-cp .env.test .env
 ```
 
 Чтобы войти в любой из контейнеров, делаем следующее:
